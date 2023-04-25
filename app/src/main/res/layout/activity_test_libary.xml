@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestCommon">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="Easy Date picker:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#FF577F"
+                android:clickable="true"
+                app:borderWidth="0dp"
+                app:fabCustomSize="50dp"
+                app:srcCompat="@android:drawable/ic_input_add"
+                app:tint="#555B6E"
+                app:useCompatPadding="false" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="Easy Time picker:"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#FF577F"
+                android:clickable="true"
+                app:borderWidth="0dp"
+                app:fabCustomSize="50dp"
+                app:srcCompat="@android:drawable/ic_input_add"
+                app:tint="#555B6E"
+                app:useCompatPadding="false" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black"
+            />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TIL_addressCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Country"
+                android:textColorHint="#555B6E"
+                app:boxStrokeColor="#555B6E"
+                app:boxStrokeWidth="2dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="15"
+                app:errorEnabled="true"
+                app:hintTextColor="#555B6E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="30"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"
+                    android:outlineAmbientShadowColor="#555B6E"
+                    android:shadowColor="#555B6E"
+                    android:textColor="#555B6E" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profile_TIL_addressCity"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="City"
+                android:textColorHint="#555B6E"
+                app:boxStrokeColor="#555B6E"
+                app:boxStrokeWidth="2dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="15"
+                app:errorEnabled="true"
+                app:hintTextColor="#555B6E">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="30"
+                    android:imeOptions="actionDone"
+                    android:maxLength="15"
+                    android:outlineAmbientShadowColor="#555B6E"
+                    android:shadowColor="#555B6E"
+                    android:textColor="#555B6E" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profile_TIL_addressStreet"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Street"
+                    android:textColorHint="#555B6E"
+                    app:boxStrokeColor="#555B6E"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:errorEnabled="true"
+                    app:hintTextColor="#555B6E">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/street"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="30"
+                        android:imeOptions="actionDone"
+                        android:maxLength="15"
+                        android:outlineAmbientShadowColor="#555B6E"
+                        android:shadowColor="#555B6E"
+                        android:textColor="#555B6E" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profile_TIL_addressNum"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="Num"
+                    android:textColorHint="#555B6E"
+                    app:boxStrokeColor="#555B6E"
+                    app:boxStrokeWidth="2dp"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="3"
+                    app:errorEnabled="true"
+                    app:hintTextColor="#555B6E">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/streetNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="0123456789"
+                        android:ems="30"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:outlineAmbientShadowColor="#555B6E"
+                        android:shadowColor="#555B6E"
+                        android:textColor="#555B6E" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/find_location"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#555B6E"
+                android:text="find location"
+                android:textColor="#FAF9F9"
+                android:textSize="15sp"
+                app:checkedIconTint="@color/white"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
