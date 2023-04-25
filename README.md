@@ -1,5 +1,4 @@
 # MakeItEasy_Library-Android
-![GitHub](https://github.com/RonShmaya/MakeItEasy_Library)
 [![](https://jitpack.io/v/guy-4444/SmartRateUsDialog-Android.svg)](https://jitpack.io/#RonShmaya/MakeItEasy_Library/1.00.00)
 
 
