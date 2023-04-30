@@ -1,10 +1,8 @@
 # MakeItEasy_Library-Android
-[![](https://jitpack.io/v/guy-4444/SmartRateUsDialog-Android.svg)](https://jitpack.io/#RonShmaya/MakeItEasy_Library/1.00.00)
+[![](https://jitpack.io/v/RonShmaya/MakeItEasy_Library.svg)](https://jitpack.io/#RonShmaya/MakeItEasy_Library)
 
 
-A library for simple implementation of smart ranking.
-The user will see a dialog every x time.
-If the user gives a high score, he will be transferred to the Google store. If he gives a low score, he will only receive a thank you toast message.
+A library for simple Date & Time Picker + Add address and get Lantitude Longtitude (no need permissions). 
 
 
 ## Setup
